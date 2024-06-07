@@ -2,12 +2,12 @@
 
 ## Candidato
 
-|-----------------------------|\n
-|Nome           | **Cristian**|\n
-|Cognome        | **Oriol**   |\n
-|Matricola      | **732671**  |\n
-|Corso di Studi | **Ing.Inf.**|\n
-|-----------------------------|\n
+|               |             |
+| ------------- | ----------- |
+|Nome           | **Cristian**|
+|Cognome        | **Oriol**   |
+|Matricola      | **732671**  |
+|Corso di Studi | **Ing.Inf.**|
 
 ## Moduli implementati
 
