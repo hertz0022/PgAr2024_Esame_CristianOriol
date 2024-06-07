@@ -13,7 +13,7 @@ import it.kibo.fp.lib.Menu;
 import it.kibo.fp.lib.RandomDraws;
 
 public class Match {
-    private Queue<Player> players;
+    public Queue<Player> players;
     private Stack<Card> match_deck;
     private ArrayList<Card> discarded_deck;
 
@@ -61,7 +61,6 @@ public class Match {
 
         Menu.clearConsole();
         Utils.print_flush(Constants.MATCH_CREATED, 2000);
-        //System.out.println(players);
 
         return new Match(players, match_deck);
     }
@@ -300,6 +299,7 @@ public class Match {
                 System.out.println(Constants.FIRST_OPTION);
                 System.out.println(Constants.SECOND_OPTION);
                 System.out.println(Constants.THIRD_OPTION);
+                System.out.println(Constants.FOURTH_OPTION);
 
                 choice = choose(current, shot);
 
@@ -311,11 +311,14 @@ public class Match {
                     case 2:
                         set_player_gun(current);
                         break;
+                    case 3:
+                        Taunt.provoke(this, current);
+                        break;
                     default:
                         fin_turn(current);
                         break;
                 }
-            } while (choice != 3 && !fin);
+            } while (choice != 4 && !fin);
         } while (!fin);
     }
 }

@@ -1,5 +1,7 @@
 package it.pgar.esame;
 
+import java.security.PublicKey;
+
 public class Constants {
 
     public static String WELCOME = "Benvenuti giocatori!\nPronti a duellare per diventare il prossimo sceriffo di New Brixia?";
@@ -37,17 +39,8 @@ public class Constants {
 
     public static String FIRST_OPTION = "\n1. Ti prudono le mani? Vuoi sparare?";
     public static String SECOND_OPTION = "2. Vuoi cambiare arma?";
-    public static String THIRD_OPTION = "3. Scarta se serve e passa il turno";
-
-
-
-
-
-
-
-
-
-
+    public static String THIRD_OPTION = "3. Provoca un commensale";
+    public static String FOURTH_OPTION = "4. Scarta se serve e passa il turno";
 
     public static String DEATH = " è morto malamente...";
     public static String PENALITY = "Andiamo sceriffo... Erano un tuo Vice...\nPer penalità perdi l'arma equipaggiata e tutte le carte!";
@@ -57,5 +50,10 @@ public class Constants {
     public static String WIN_RENEGADE = "Udite! Udite! C'è un nuovo sceriffo in città! Un rinnegato...";
     public static String WIN_SHERIFF = "Un gran sceriffo ha New Brixia! Complimenti a tutte le guardie rimaste in vita...";
 
-
+    public static String CHOOSE_PROVOKE = "Scegli chi provocare: ";
+    public static String ASK_CLEAR_STRING = "Inserisci la parola del messaggio numero ";
+    public static String ASK_KEY = "Inserisci la chiave per dialetizzare la parola ";
+    public static String ASK_NUM_STRINGS = "Inserisci il numero di parole che vuoi mandare al poveretto: ";
+    public static String SEND_MSG = " ayoo! C'è un messaggio per te da ";
+    public static String GO_ON = "\nLetto bene?\nInvio per continuare: ";
 }
